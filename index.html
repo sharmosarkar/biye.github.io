@@ -31,6 +31,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style_extra.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyResume - v2.2.0
@@ -81,12 +83,79 @@
 
 
   <main id="main">
+    <!-- ======= Facts Section (Venue) ======= -->
+    <section id="facts" class="facts">
+<!--      <div class="container" data-aos="fade-up">-->
+
+<!--        <div class="section-title">-->
+<!--          <h2>Facts</h2>-->
+<!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+<!--        </div>-->
+
+<!--        <div class="row">-->
+
+<!--        </div>-->
+        <div id="fh5co-couple-story" data-aos="fade-up">
+<!--          <div class="container">-->
+            <div class="row">
+              <div class="col-md-12 col-md-offset-2 section-title text-center fh5co-heading animate-box">
+<!--                <span>We Love Each Other</span>-->
+                <h2>Our Story</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-md-offset-0">
+                <ul class="timeline animate-box">
+                  <li class="animate-box">
+                    <div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h3 class="timeline-title">First We Meet</h3>
+                        <span class="date">December 25, 2015</span>
+                      </div>
+                      <div class="timeline-body">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="timeline-inverted animate-box">
+                    <div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h3 class="timeline-title">First Date</h3>
+                        <span class="date">December 28, 2015</span>
+                      </div>
+                      <div class="timeline-body">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="animate-box">
+                    <div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h3 class="timeline-title">In A Relationship</h3>
+                        <span class="date">January 1, 2016</span>
+                      </div>
+                      <div class="timeline-body">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<!--        </div>-->
+<!--      </div>-->
+    </section> <!-- End Facts Section -->
 
     <!-- ======= About Section (RSVP) ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title fh5co-heading animate-box">
           <h2>RSVP</h2>
           <p>We would be honored to have you join us on this auspicious day</p>
         </div>
@@ -101,25 +170,6 @@
             <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" name="rsvp_form"
                   action="https://script.google.com/macros/s/AKfycbz9-ki3YZZg8RGJS9XmgH6xiXui0McK8nhGch-8Gpi1u1Na9NAsVKUZ/exec">
               <!-- change the form action to your script url -->
-
-<!--              <div class="form-row">&ndash;&gt;-->
-                <!--                <div class="col-md-6 form-group">-->
-                <!--                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />-->
-                <!--                  <div class="validate"></div>-->
-                <!--                </div>-->
-                <!--                <div class="col-md-6 form-group">-->
-                <!--                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
-                <!--                  <div class="validate"></div>-->
-                <!--                </div>-->
-                <!--              </div>-->
-                <!--              <div class="form-group">-->
-                <!--                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />-->
-                <!--                <div class="validate"></div>-->
-                <!--              </div>-->
-                <!--              <div class="form-group">-->
-                <!--                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>-->
-                <!--                <div class="validate"></div>-->
-                <!--              </div>-->
 
                 <div class="form-row align-content-center">
                   <div class="col-md-12 form-group">
@@ -153,7 +203,7 @@
                     <br/>
                   </div>
                   <div class="col-md-2" > </div>
-                  <div class="col-md-8 highlighted_background align-content-center" id="attend_in_person_msg">
+                  <div class="col-md-8 highlighted_background align-content-center font-italic" id="attend_in_person_msg">
                     <br/>
 <!--                    <p class="justify-content-center">-->
                       We are so Thrilled that you would be joining us!! <br/><br/>
@@ -181,40 +231,6 @@
                     <br/>
                     <div class="text-center"><button class="button rounded_button" type="submit">...  Submit RSVP  ...</button></div>
                   </div>
-
-
-
-<!--                  </div>-->
-<!--                <fieldset class="pure-group">-->
-<!--                  <label for="name">Name: </label>-->
-<!--                  <input id="name" name="name" placeholder="What your Mom calls you" />-->
-<!--                </fieldset>-->
-
-<!--                <fieldset class="pure-group">-->
-<!--                  <label for="message">Message: </label>-->
-<!--                  <textarea id="message" name="message" rows="10"-->
-<!--                            placeholder="Tell us what's on your mind..."></textarea>-->
-<!--                </fieldset>-->
-
-<!--                <fieldset class="pure-group">-->
-<!--                  <label for="email"><em>Your</em> Email Address:</label>-->
-<!--                  <input id="email" name="email" type="email" value=""-->
-<!--                         required placeholder="your.name@email.com"/>-->
-<!--                </fieldset>-->
-
-<!--                <fieldset class="pure-group">-->
-<!--                  <label for="color">Favourite Color: </label>-->
-<!--                  <input id="color" name="color" placeholder="green" />-->
-<!--                </fieldset>-->
-
-<!--                <fieldset class="pure-group honeypot-field">-->
-<!--&lt;!&ndash;                  <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>&ndash;&gt;-->
-<!--                  <input id="honeypot" type="text" name="honeypot" value="" />-->
-<!--                </fieldset>-->
-
-<!--                <button class="button-success pure-button button-xlarge">-->
-<!--                  <i class="fa fa-paper-plane"></i>&nbsp;Send</button>-->
-<!--              </div>-->
 
               <!-- Customise the Thankyou Message People See when they submit the form: -->
               <div class="thankyou_message" style="display:none;">
@@ -257,52 +273,52 @@
     </section><!-- End About Section -->
 
     <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
+<!--    <section id="facts" class="facts">-->
+<!--      <div class="container" data-aos="fade-up">-->
 
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+<!--        <div class="section-title">-->
+<!--          <h2>Facts</h2>-->
+<!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+<!--        </div>-->
 
-        <div class="row">
+<!--        <div class="row">-->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="count-box">-->
+<!--              <i class="icofont-simple-smile"></i>-->
+<!--              <span data-toggle="counter-up">232</span>-->
+<!--              <p>Happy Clients</p>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">-->
+<!--            <div class="count-box">-->
+<!--              <i class="icofont-document-folder"></i>-->
+<!--              <span data-toggle="counter-up">521</span>-->
+<!--              <p>Projects</p>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">-->
+<!--            <div class="count-box">-->
+<!--              <i class="icofont-live-support"></i>-->
+<!--              <span data-toggle="counter-up">1,463</span>-->
+<!--              <p>Hours Of Support</p>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
-            </div>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">-->
+<!--            <div class="count-box">-->
+<!--              <i class="icofont-users-alt-5"></i>-->
+<!--              <span data-toggle="counter-up">15</span>-->
+<!--              <p>Hard Workers</p>-->
+<!--            </div>-->
+<!--          </div>-->
 
-        </div>
+<!--        </div>-->
 
-      </div>
-    </section><!-- End Facts Section -->
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Facts Section &ndash;&gt;-->
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
