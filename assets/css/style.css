@@ -30,6 +30,26 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Sacramento", Arial, serif;
 }
 
+.rounded_button{
+  width: 50%;
+  height: 40px;
+  border-radius: 12px;
+  color: antiquewhite;
+  border: none;
+  background-color: #BB0635;
+}
+
+.highlighted_background{
+  background-color: #fed8e2;
+  text-align: center;
+}
+
+.custom_drop_down{
+  border-radius: 8px;
+  color: antiquewhite;
+  border: none;
+  background-color: #BB0635;
+}
 
 
 /*--------------------------------------------------------------
@@ -378,6 +398,34 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+/*.rsvp-section{*/
+/*  width: 100%;*/
+/*  height: 50vh;*/
+/*  !*background: url("../img/rsvp.jpg") top center no-repeat;*!*/
+/*  !*background-size: cover;*!*/
+/*  position: relative;*/
+/*  opacity: 0.5;*/
+/*}*/
+.rsvp-section {
+  width: 100%;
+  height: 75vh;
+  display: block;
+  position: relative;
+}
+.rsvp-section::after {
+  content: "";
+  background: url("../img/rsvp_edited.jpg") top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;

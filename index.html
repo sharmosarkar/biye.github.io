@@ -93,12 +93,12 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/rsvp.jpg" class="img-fluid" alt="">
+            <img src="assets/img/rsvp_edited.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Please help us make the Arrangements</h3>
+<!--            <h3>Please help us make the Arrangements</h3>-->
             <br/>
-            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" name="rsvp_form"
                   action="https://script.google.com/macros/s/AKfycbz9-ki3YZZg8RGJS9XmgH6xiXui0McK8nhGch-8Gpi1u1Na9NAsVKUZ/exec">
               <!-- change the form action to your script url -->
 
@@ -121,7 +121,7 @@
                 <!--                <div class="validate"></div>-->
                 <!--              </div>-->
 
-                <div class="form-row">
+                <div class="form-row align-content-center">
                   <div class="col-md-12 form-group">
 <!--                  <label for="name">Name: </label>-->
                   <input type="text" name="name" class="form-control" id="name"
@@ -138,25 +138,48 @@
                            placeholder="Telephone Number"/>
                   </div>
                   <div class="col-md-4 form-group">
-                    <input type="radio" id="attend_in_person" name="attend_in_person" value="male">
+                    <input type="radio" id="attend_in_person" name="rsvp_attendance_mode" value="attend_in_person" onchange="radio_on_change()">
                     <label for="attend_in_person">Attend in Person </label>
                     <br/>
                   </div>
                   <div class="col-md-4 form-group">
-                    <input type="radio" id="attend_in_virtually" name="attend_in_person" value="male">
+                    <input type="radio" id="attend_in_virtually" name="rsvp_attendance_mode" value="attend_in_virtually" onchange="radio_on_change()">
                     <label for="attend_in_virtually">Attend in Virtually</label>
                     <br/>
                   </div>
                   <div class="col-md-4 form-group">
-                    <input type="radio" id="date_time_does_not_work" name="date_time_does_not_work" value="male">
+                    <input type="radio" id="date_time_does_not_work" name="rsvp_attendance_mode" value="date_time_does_not_work" onchange="radio_on_change()">
                     <label for="attend_in_virtually">Date and Time doesn't Work</label>
                     <br/>
                   </div>
-                  <div class="col-md-6 form-group">
+                  <div class="col-md-2" > </div>
+                  <div class="col-md-8 highlighted_background align-content-center" id="attend_in_person_msg">
+                    <br/>
+<!--                    <p class="justify-content-center">-->
+                      We are so Thrilled that you would be joining us!! <br/><br/>
+                      A Special Thank you for adhering to the COVID-19 restrictions and being with us in-person on the day! <br/><br/>
+<!--                    </p>-->
+<!--                    <input type="text" name="in_person_guest" class="form-control" id="in_person_guest" placeholder="0"-->
+<!--                           data-rule="maxlen:4" data-msg="Please your guest Count" />-->
+                    <label for="in_person_guest">
+                      A Quick Question, are you bringing your Guest with you? If so, please select your guest count here:
+                    </label>
+                    <select id="in_person_guest" name="in_person_guest" class="custom_drop_down">
+                      <option value="0" selected>Only Me (0 Guests)</option>
+                      <option value="1">1 Guest</option>
+                      <option value="2">2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                    <br/><br/>
+                  </div>
+                  <div class="col-md-2" > </div>
+                  <div class="col-md-6 form-group" id="honeypot_div">
                     <input id="honeypot" type="text" name="honeypot" value="" />
                   </div>
                   <div class="col-md-12 form-group">
-                    <div class="text-center"><button type="submit">Send Message</button></div>
+                    <br/>
+                    <div class="text-center"><button class="button rounded_button" type="submit">...  Submit RSVP  ...</button></div>
                   </div>
 
 
@@ -846,6 +869,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/form-submission-handler.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/js/custom_js.js"></script>
 </body>
 

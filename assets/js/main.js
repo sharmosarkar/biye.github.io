@@ -58,6 +58,9 @@
 
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
+    // alert("dd");
+    document.getElementById("attend_in_person_msg").style.display = "none";
+    document.getElementById("honeypot_div").style.display = "none";
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
