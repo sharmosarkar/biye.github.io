@@ -27,6 +27,14 @@ body {
   alignment: center;
 }
 
+.text-align-center{
+  text-align: center;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
 .center-block {
   display: block;
   margin-left: auto;
