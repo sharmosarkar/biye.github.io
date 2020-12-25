@@ -6,13 +6,24 @@ function radio_on_change() {
         if (radios[i].checked) {
             // do whatever you want with the checked radio
             // alert(radios[i].value);
-            var x = document.getElementById("attend_in_person_msg");
+            // var x = document.getElementById("attend_in_person_msg");
             if (radios[i].value === "attend_in_person") {
-                x.style.display = "block";
+                document.getElementById("attend_in_person_msg").style.display = "block";
+                document.getElementById("attend_virtually_msg").style.display = "none";
+            } else if (radios[i].value === "attend_in_virtually") {
+                document.getElementById("attend_in_person_msg").style.display = "none";
+                document.getElementById("attend_virtually_msg").style.display = "block";
             } else{
-                x.style.display = "none";
+                document.getElementById("attend_in_person_msg").style.display = "none";
+                document.getElementById("attend_virtually_msg").style.display = "block";
             }
-            // only one radio can be logically checked, don't check the rest
+            // x = document.getElementById("attend_virtually_msg");
+            // if (radios[i].value === "attend_in_virtually") {
+            //     x.style.display = "block";
+            // } else{
+            //     x.style.display = "none";
+            // }
+            // // only one radio can be logically checked, don't check the rest
             break;
         }
     }

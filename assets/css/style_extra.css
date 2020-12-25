@@ -19,6 +19,39 @@ body {
   background: #fff;
 }
 
+@font-face {
+  font-family: 'entypo';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-90/entypo.woff') format('woff');
+}
+
+.entypo-heart:before{
+  content:"\2665";
+}
+
+/*body {*/
+/*  background: #333;*/
+/*  color: #fff;*/
+/*  font-family: 'Archivo Black', sans-serif;*/
+/*  font-size: 3em;*/
+/*  margin-top: 1em;*/
+/*  text-align: center;*/
+/*  text-transform: uppercase;*/
+/*}*/
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  color: #bb0635;
+}
+
+.button-index-page{
+  border-radius: 30%;
+  text-align: center;
+  font-weight: bolder;
+  padding: 10%;
+  /*border: 1px solid #ffffff;*/
+  background-color: rgba(255, 6, 72, 0.18);  /*BB0635 */
+}
+
 .rounded-img{
   width: 120px;
   border-radius: 50%;

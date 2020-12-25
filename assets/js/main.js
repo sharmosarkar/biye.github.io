@@ -59,6 +59,7 @@
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
     // alert("dd");
+    document.getElementById("attend_virtually_msg").style.display = "none";
     document.getElementById("attend_in_person_msg").style.display = "none";
     document.getElementById("honeypot_div").style.display = "none";
     if (window.location.hash) {
@@ -122,6 +123,38 @@
   $('.back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // direct_rsvp_button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.direct-rsvp').fadeIn('slow');
+    } else {
+      $('.direct-rsvp').fadeOut('slow');
+    }
+    // if ($(this).scrollTop() > 100) {
+    //   $('.direct-rsvp-hero').fadeIn('slow');
+    // } else {
+    //   $('.direct-rsvp-hero').fadeOut('slow');
+    // }
+  });
+
+  $('.direct-rsvp').click(function() {
+    var myElement = document.getElementById('about');
+    var topPos = myElement.offsetTop;
+    $('html, body').animate({
+      scrollTop: topPos
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  $('.direct-rsvp-hero').click(function() {
+    var myElement = document.getElementById('about');
+    var topPos = myElement.offsetTop;
+    $('html, body').animate({
+      scrollTop: topPos
     }, 1500, 'easeInOutExpo');
     return false;
   });
