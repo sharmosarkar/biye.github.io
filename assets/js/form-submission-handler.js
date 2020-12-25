@@ -6,16 +6,36 @@
         var elements = form.elements;
         var honeypot;
 
+        if (document.getElementById('name').value === undefined || document.getElementById('name').value  === ""){
+            alert("Please fill in your Name in the RSVP form"); return ;
+        }
+        if (document.getElementById('email').value === undefined || document.getElementById('email').value  === ""){
+            alert("Please fill in your Email in the RSVP form"); return ;
+        }
+        if (document.getElementById('phone_number').value === undefined || document.getElementById('phone_number').value  === ""){
+            alert("Please fill in your Phone Number in the RSVP form"); return ;
+        }
+
         // get RSVP radio button inputs
         var attend_in_person;
+        var rsvp_mode;
         if(document.getElementById('attend_in_person').checked) {
             attend_in_person = 'YES';
+            rsvp_mode = 'attend_in_person'
         }else if(document.getElementById('attend_in_virtually').checked) {
             attend_in_person = 'NO';
+            rsvp_mode = 'attend_in_virtually';
         }else if(document.getElementById('date_time_does_not_work').checked) {
             attend_in_person = 'NO';
+            rsvp_mode = 'date_time_does_not_work';
+        }else{
+            alert("Please Select a RSVP Mode");
+            return;
         }
-        // alert(attend_in_person); return;
+
+        var attend_in_person_guests = document.getElementById('in_person_guest').value;
+
+        // alert(rsvp_mode); return;
 
         var fields = Object.keys(elements).filter(function(k) {
             if (elements[k].name === "honeypot") {
@@ -61,6 +81,8 @@
             = form.dataset.email || ""; // no email by default
 
         formData['attend_in_person'] = attend_in_person;
+        formData['in_person_guest'] = attend_in_person_guests;
+        formData['rsvp_mode'] = rsvp_mode;
 
         return {data: formData, honeypot: honeypot};
     }
