@@ -68,6 +68,10 @@ body {
   font-weight: bold;
 }
 
+.add-padding{
+  padding: 10px;
+}
+
 .center-block {
   display: block;
   margin-left: auto;
